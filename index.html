@@ -5,19 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="testStyle.css">
+    <link rel="stylesheet" href="Style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body>n
     <!-- 시작 태그 -->
     <div class="content" id="start">
-        <p>유형 테스트</p>
-        <button type="button" class="btn btn-warning" onclick="start();">시작하기</button>
+        <h1 class="mt-3 text-center">짱구로 알아보는 나의 성향</h1>
+        <img src="짱구1.jpg" class="w3-circle w3-border w3-border-sand"  style="border-width: 1px !important;"/>
+        <button type="button" class="btn btn-warning" onclick="start();" >떡잎마을로 출발!</button>
+        
+
     </div>
 
     <!-- 질문 태그 -->
-    <div class="content" id="question">
+    <div class="content" id="question">  
         <p id="pgrNum">1/3</p>
         <div class="progress">
                 <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning mt-100" role="progressbar" style="width: calc(100/3*1%)"></div>
@@ -26,74 +29,26 @@
         <input type="hidden" id="type" value="EI">
         <button id="A" type="button" class="btn btn-outline-warning">mbti</button>
         <button id="B" type="button" class="btn btn-outline-warning mt-3">mbti</button>
+       
+            
     </div>
 
-    <!-- 결과 태그 -->
-    <div class="content" id="result">
-        <p id="mbti">mbti 결과</p>
-        <div class="result-btn">
-            <button id="replay" type="button" class="btn btn-warning" onclick="window.location.reload()">다시하기</button>
-            <button id="copy" type="button" class="btn btn-warning mt-4" role="alert" onclick="copy()">링크복사</button>
-            <a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
-                <button type="="button" class="btn-warning mt-4" style="width: 100%;">공유하기</button>
-            </a>
-        </div>
-    </div>
-
-    <input type="hidden" id="EI" value="0">
-    <input type="hidden" id="SN" value="0">
-    <input type="hidden" id="TF" value="0">
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./js.js"></script>
-
-
-    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
-  integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
-<script>
-  Kakao.init('79b657cd9f968cc605aa19979595667c'); // 사용하려는 앱의 JavaScript 키 입력
-</script>
-
-<a id="kakaotalk-sharing-btn" href="javascript:shareMessage()">
-  <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-    alt="카카오톡 공유 보내기 버튼" />
-</a>
-
-<script>
-  function shareMessage() {
-    Kakao.Share.sendDefault({
-      objectType: 'feed',
-      content: {
-        title: '나만의 유형테스트 만들기',
-        description: '#mbti',
-        imageUrl:
-          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        link: {
-          // [내 애플리케이션] > [플랫폼] 에서 등록한 사이트 도메인과 일치해야 함
-          
-          webUrl: 'https://developers.kakao.com',
-        },
-      },
+   <!-- 결과 태그 -->
+   <div class="content" id="result">
+    <p id="mbti">mbti 결과</p>
     
-      buttons: [
-        {
-          title: '웹으로 보기',
-          link: {
-            
-            webUrl: 'https://peaceful-bavarois-98a328.netlify.app',
-          },
-        },
-        {
-          title: '앱으로 보기',
-          link: {
-            
-            webUrl: 'https://peaceful-bavarois-98a328.netlify.app',
-          },
-        },
-      ],
-    });
-  }
-</script>
+    <div class="result-btn">
+        <button id="replay" type="button" class="btn btn-warning">다시하기</button>
+        <button id="copy" type="button" class="btn btn-warning mt-4" role="alert">링크복사</button>
+    </div>
+</div>
+
+<input type="hidden" id="EI" value="0">
+<input type="hidden" id="SN" value="0">
+<input type="hidden" id="TF" value="0">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
