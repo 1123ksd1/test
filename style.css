@@ -64,8 +64,8 @@ body{
           
                
   .content {
-    background: #ffecdd;
-    background: -moz-linear-gradient(top,  #ffecdd 0%, #eaf9e2 100%);
+    background: #85cac6;
+    background: -moz-linear-gradient(top,  #51a195 0%,   #51a195 100%);
     
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffecdd', endColorstr='#eaf9e2',GradientType=0 );
     margin: 0 auto;
