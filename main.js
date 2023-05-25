@@ -7,7 +7,7 @@ var q = {
     1:{"title":"책을 빌려줘 고마운 마음에 밥을 사겠다고 했다. 약속장소는?","type":"EI","A":"놀거리가 많은 핫플","B":"대화에 조용할 수 있는 식당"},
     2:{"title":"회사상사가 집가기 전 나를 부른다","type":"SN","A":"야근하라고 하면 뭐라고 하지? 있을 법한 상황을 대비한다","B":"짤리면 다른 직장을 어디로 가야하지 상상의 나래를 펼친다."},
     3:{"title":"저녁약속에 늦게 온 상대방, 어떻게 사과하면 마음이 풀릴까?","type":"TF","A":"차 사고 때문에 버스가 연착되서.. 미안해 ","B":"정말 더운데 오래 기다렸지.. 미안해.."},
-    4:{"title":"우울한 나날은 보낸 나 리프레시를 위해 여행을 간다면?","type":"JP","A":"일단 멀리 떠나 머릿속을 깨끗이 비운다","B":"나만의 화려한 휴가를 계획해 머릿속을 깨끗이 비운다"},
+    4:{"title":"우울한 감정으로 보낸 날 리프레시를 위해 여행을 간다면?","type":"JP","A":"힐링을 위한 화려한 계획을 세운다","B":"일단 멀리 떠나 머릿속을 깨끗이 비운다"},
     
 }
 
@@ -17,7 +17,7 @@ var q = {
 var result = {
     "ESFJ": {
       "mbti": "ESFJ <li>사랑엔 발 벋고 나서는 사랑세포</li>" ,
-      "imgSrc" : "./me/esfg.png" // Add the image file name or URL for ESFJ
+      "imgSrc" : "./me/esfj.png" // Add the image file name or URL for ESFJ
     },
     "ESFP": {
         "mbti": "ESFP <li>쓸데없이 당당한 출출세포</li>" ,
@@ -44,7 +44,7 @@ var result = {
         "imgSrc" : "./me/entj.png" // Add the image file name or URL for ESFJ
       },
       "ENTP": {
-        "mbti": "ENTP <li>즐거움에 진심인 여행세포</li>" ,
+        "mbti": "ENTP <li>즐거움에 진심인 여행세포</li> " ,
         "imgSrc" : "./me/entp.png" // Add the image file name or URL for ESFJ
       },
       "ISFJ": {
